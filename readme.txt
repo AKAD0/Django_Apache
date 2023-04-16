@@ -1,5 +1,5 @@
+— Build web-app (http://docs.djangoproject.com/en/4.2/intro/tutorial01/)BE
 BE( 1.Base —> 2.DB) —> 3.FEx2 —> 4.Tests —> 5.FE+x2 —> 6.Packaging
-
 1. Setup basic html app (URLconf, views)
 2. Setup sys tables, app models
 3. Admin page, views (templates, non-hard urls, namespacing)
@@ -7,7 +7,11 @@ BE( 1.Base —> 2.DB) —> 3.FEx2 —> 4.Tests —> 5.FE+x2 —> 6.Packaging
 5. Static, styles
 6. *skip*
 
-Deploy.
+— Setup Apache+wsgi (https://youtu.be/frEjX1DNSpc)
+Apache —> mod-wsgi —> Edit httpd.conf, settings.py —> Modify Django-app
+
+— Deploy
+1.Buy domain —> 2.DNS host —> 3.Delegate DNS —> 4.Port forwarding on router —> 5.Apache ports —> 6.Security
 nic.ru, cloudflare.com
 1. Buy domain name
 2. Acquire DNS host (may be on the same service where you bought domain name)
@@ -15,7 +19,7 @@ nic.ru, cloudflare.com
 4. Setup port forwarding on router (so router transmits all the trafic to the server)
 (Local ports — Apache setup's port; External ports — 80//http, 443//https)
 https://developers.cloudflare.com/fundamentals/get-started/reference/network-ports/
-
-+. Add Security features. Block unwanted regions within DNS service
+5. Specify listening ports (local) in httpd.conf
+6. Block unwanted regions
 
 //Local IP points on the router — not the machine itself. Port does.
