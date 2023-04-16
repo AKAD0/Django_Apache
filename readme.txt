@@ -1,3 +1,5 @@
+Hello-world project for building and deploying net-accessible web-app.
+
 — Build web-app (http://docs.djangoproject.com/en/4.2/intro/tutorial01/)BE
 BE( 1.Base —> 2.DB) —> 3.FEx2 —> 4.Tests —> 5.FE+x2 —> 6.Packaging
 1. Setup basic html app (URLconf, views)
