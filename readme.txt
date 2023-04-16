@@ -13,11 +13,11 @@ BE( 1.Base —> 2.DB) —> 3.FEx2 —> 4.Tests —> 5.FE+x2 —> 6.Packaging
 Apache —> mod-wsgi —> Edit httpd.conf, settings.py —> Modify Django-app
 
 — Deploy
-1.Buy domain —> 2.DNS host —> 3.Delegate DNS —> 4.Port forwarding on router —> 5.Apache ports —> 6.Security
+1.Buy domain —> 2.DNS host —> 3.Delegate DNS, Specify local IP —> 4.Port forwarding on router —> 5.Apache ports —> 6.Security
 nic.ru, cloudflare.com
 1. Buy domain name
 2. Acquire DNS host (may be on the same service where you bought domain name)
-3. Delegate new DNS for acquired domain
+3. Delegate new DNS for acquired domain, specify local IP to address to
 4. Setup port forwarding on router (so router transmits all the trafic to the server)
 (Local ports — Apache setup's port; External ports — 80//http, 443//https)
 https://developers.cloudflare.com/fundamentals/get-started/reference/network-ports/
